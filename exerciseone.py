@@ -15,14 +15,12 @@ from PIL import Image
 
 
 # #Set title
-
 st.title('WIFI End-Projekt')
 
 image = Image.open('tdslogo.png')
 st.image(image, use_column_width=True)
 
 # set subtitle
-
 st.write("""
     # A simple Data App With Streamlit
     """)
@@ -67,7 +65,6 @@ st.pyplot()
 
 
 # BUILDING OUR ALGORITHM
-
 def add_parameter(name_of_clf):
     params = dict()
     if name_of_clf == 'SVM':
@@ -84,7 +81,6 @@ params = add_parameter(classifier_name)
 
 
 # Accessing our classifier
-
 def get_classifier(name_of_clf, params):
     clf = None
     if name_of_clf == 'SVM':
